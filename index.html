@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#260b0b">
+<title>Happy Birthday Khushi ♡</title>
+<style>
+:root{--wine:#4b101b;--wine2:#25090c;--brown:#32170f;--gold:#e6bd83;--cream:#ffe8c8;--rose:#b95d68;--muted:#d7b99b}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:radial-gradient(ellipse at top,#4b2018 0,#1b0809 58%,#100506 100%);color:var(--cream);font-family:Georgia,'Times New Roman',serif;overflow-x:hidden}
+a{color:inherit;text-decoration:none}
+button{font:inherit}
+.topbar{position:sticky;top:0;z-index:20;display:flex;align-items:center;justify-content:space-between;gap:14px;padding:13px clamp(14px,4vw,54px);background:#190607eF;border-bottom:1px solid #a9754d77;backdrop-filter:blur(12px)}
+.brand{font-size:clamp(17px,2.2vw,25px);color:var(--gold);white-space:nowrap}.brand span{color:#d76b79}
+.nav{display:flex;gap:clamp(10px,2vw,26px);font-size:14px;color:#e4c6a2}.nav a:hover{color:#fff}
+.music{border:1px solid #a8754c;border-radius:99px;background:#3b1017;color:var(--cream);padding:8px 12px;cursor:pointer;white-space:nowrap;font-size:13px}
+.hero{min-height:650px;display:grid;grid-template-columns:1fr 1.1fr 1fr;align-items:center;gap:24px;padding:65px clamp(18px,5vw,72px);position:relative;isolation:isolate;overflow:hidden;background:linear-gradient(90deg,#160607d9,#2c0c0b99,#170607d9),radial-gradient(ellipse at 50% 30%,#7b3b2a 0,#35100f 45%,#180607 85%)}
+.hero:before{content:"";position:absolute;inset:0;z-index:-1;opacity:.5;background:radial-gradient(circle at 12% 30%,#f5c080 0 2px,transparent 3px),radial-gradient(circle at 80% 22%,#f5c080 0 1px,transparent 3px),radial-gradient(circle at 60% 72%,#c97560 0 2px,transparent 4px);background-size:120px 130px,170px 160px,210px 180px}
+.hero-copy{text-align:center;grid-column:2}
+.eyebrow{text-transform:uppercase;letter-spacing:.28em;font-size:12px;color:var(--gold)}
+h1{font-size:clamp(52px,8vw,100px);font-weight:400;line-height:.98;margin:18px 0;color:var(--cream);text-shadow:0 0 32px #e9ad6c38}
+.script{font-style:italic;color:#f0bf91}
+.heart-divider{color:#d67a79;letter-spacing:.45em;margin:22px 0}
+.hero-copy p{max-width:440px;margin:0 auto;color:#f1d9bb;font-size:17px;line-height:1.8}
+.decor{font-size:clamp(48px,7vw,88px);text-align:center;filter:drop-shadow(0 10px 22px #0008);animation:float 5s ease-in-out infinite}
+.decor small{display:block;font-size:13px;letter-spacing:.16em;color:var(--gold);margin-top:12px}
+.countdown{grid-column:1/-1;justify-self:center;width:min(720px,100%);margin-top:12px;padding:24px 20px;border:1px solid #c28a56;border-radius:10px;background:#210809b8;box-shadow:0 0 0 5px #7e45231a,0 18px 55px #0005;text-align:center}
+.countdown h2{font-size:21px;font-weight:400;margin:0 0 6px;color:var(--gold)}
+.date-label{font-size:12px;letter-spacing:.2em;color:#d6ae82;margin-bottom:18px}
+.time-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:8px}
+.time-box strong{display:block;font-size:clamp(26px,4vw,39px);font-weight:400;color:var(--cream)}
+.time-box span{font-size:12px;color:var(--muted)}
+.section{padding:78px clamp(18px,6vw,90px);max-width:1250px;margin:auto}
+.section-heading{text-align:center;margin-bottom:34px}
+.section-heading h2{font-size:clamp(30px,4vw,44px);font-weight:400;margin:10px 0;color:var(--gold)}
+.section-heading p{color:var(--muted);line-height:1.7}
+.feature-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.card{border:1px solid #a16c4777;background:linear-gradient(145deg,#3b1715dd,#1d080bdd);padding:27px;border-radius:12px;box-shadow:0 14px 35px #0003;min-width:0}
+.card-icon{font-size:34px;margin-bottom:14px}
+.card h3{font-size:24px;font-weight:400;color:var(--gold);margin:0 0 12px}
+.card p{line-height:1.8;color:#e4c9aa;margin:0 0 20px}
+.btn{display:inline-flex;justify-content:center;align-items:center;gap:8px;border:1px solid #c38d5a;border-radius:99px;padding:12px 19px;background:linear-gradient(135deg,#69202b,#3c1018);color:#ffe6c4;cursor:pointer;transition:transform .2s,box-shadow .2s}
+.btn:hover{transform:translateY(-2px);box-shadow:0 8px 22px #0005}
+.letter-content{display:none;margin-top:18px;padding:18px;border-left:2px solid var(--gold);background:#18070888;line-height:1.9;color:#f4dcc0;animation:fadeIn .6s ease}
+.letter-content.open{display:block}
+.surprise{display:none;margin-top:20px;text-align:center;padding:25px;border:1px dashed #d8a66c;border-radius:12px;background:#22080dbb;line-height:1.9;animation:fadeIn .7s ease}
+.surprise.open{display:block}
+.surprise .big{font-size:52px}
+.message{max-width:800px;margin:auto;text-align:center;padding:34px 25px;border:1px solid #9d6849;border-radius:14px;background:linear-gradient(140deg,#3a1515,#21090b);box-shadow:0 15px 50px #0003}
+.message p{font-size:18px;line-height:2;color:#f0d6b5}
+.signature{font-style:italic;color:var(--gold);font-size:22px}
+footer{text-align:center;padding:30px 15px 38px;border-top:1px solid #9b694655;color:#caa784;font-size:13px;line-height:1.9}
+.petal{position:fixed;top:-30px;z-index:30;pointer-events:none;color:#c85b69;animation:fall linear forwards;text-shadow:0 0 8px #d98b74}
+@keyframes float{0%,100%{transform:translateY(0) rotate(-2deg)}50%{transform:translateY(-14px) rotate(2deg)}}
+@keyframes fall{to{transform:translate3d(var(--drift),110vh,0) rotate(600deg);opacity:.15}}
+@keyframes fadeIn{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}
+@media(max-width:850px){.nav{display:none}.hero{grid-template-columns:1fr;min-height:auto;padding:58px 20px 42px;gap:15px}.hero-copy{grid-column:1;grid-row:1}.decor{font-size:54px}.decor-left{display:none}.countdown{grid-column:1;margin-top:10px}.feature-grid{grid-template-columns:1fr}.section{padding:55px 18px}.card{padding:24px}.hero-copy p{font-size:16px}.brand{white-space:normal}}
+@media(max-width:420px){.topbar{padding:11px 12px}.brand{font-size:16px}.music{font-size:12px;padding:8px 10px}.hero{padding-top:44px}.countdown{padding:20px 10px}.time-grid{gap:3px}.time-box span{font-size:10px}.section-heading h2{font-size:31px}.message{padding:25px 17px}.message p{font-size:16px}}
+@media(prefers-reduced-motion:reduce){*,*:before,*:after{scroll-behavior:auto!important;animation-duration:.01ms!important;animation-iteration-count:1!important;transition:none!important}}
+</style>
+</head>
+<body>
+<header class="topbar">
+  <a class="brand" href="#home">♡ Happy Birthday <span>Khushi</span></a>
+  <nav class="nav" aria-label="Main navigation"><a href="#home">Home</a><a href="#letter">Letter</a><a href="#countdown">Countdown</a><a href="#message">Message</a><a href="#surprise">Surprise</a></nav>
+  <button class="music" id="musicBtn" aria-pressed="false">♫ Play piano</button>
+</header>
+
+<main>
+<section class="hero" id="home">
+  <div class="decor decor-left" aria-hidden="true">🕯️<small>A LITTLE MAGIC</small></div>
+  <div class="hero-copy">
+    <div class="eyebrow">A very special day</div>
+    <h1>Happy Birthday<br><span class="script">Khushi ♡</span></h1>
+    <div class="heart-divider">──── ♡ ────</div>
+    <p>You are not just my sister — you are a beautiful part of my world. May your life always be filled with love, laughter, and little moments of magic.</p>
+  </div>
+  <div class="decor" aria-hidden="true">🌹<small>MADE WITH LOVE</small></div>
+  <div class="countdown" id="countdown">
+    <h2>Your special day</h2><div class="date-label">25 JANUARY ✦ EVERY YEAR</div>
+    <div class="time-grid">
+      <div class="time-box"><strong id="days">000</strong><span>Days</span></div>
+      <div class="time-box"><strong id="hours">00</strong><span>Hours</span></div>
+      <div class="time-box"><strong id="minutes">00</strong><span>Minutes</span></div>
+      <div class="time-box"><strong id="seconds">00</strong><span>Seconds</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="letter">
+  <div class="section-heading"><div class="eyebrow">A little something from your brother</div><h2>A Letter for Khushi 💌</h2><p>Some feelings deserve a little more than an ordinary message.</p></div>
+  <div class="feature-grid">
+    <article class="card">
+      <div class="card-icon">💌</div><h3>Your letter</h3><p>A small letter, written with a whole lot of love.</p>
+      <button class="btn" id="letterBtn" aria-expanded="false">Open your letter ♡</button>
+      <div class="letter-content" id="letterText">
+        Dear Khushi,<br><br>
+        Happy Birthday to my wonderful sister! I hope this new year of your life brings you peace, confidence, beautiful surprises, and countless reasons to smile. Never forget how special you are and how much happiness you bring to the people around you.<br><br>
+        No matter how much we grow or how busy life gets, you will always have a special place in my heart. Keep dreaming big, keep being yourself, and never stop shining.<br><br>
+        With all my love,<br><strong>Your brother ❤️</strong>
+      </div>
+    </article>
+    <article class="card">
+      <div class="card-icon">🌷</div><h3>One wish for you</h3><p>May every sunrise bring you hope, every challenge make you stronger, and every day remind you that you are loved.</p>
+      <a class="btn" href="#message">Read my message ↓</a>
+    </article>
+    <article class="card" id="surprise">
+      <div class="card-icon">🎁</div><h3>A little surprise</h3><p>There's a birthday wish hidden here, just for you. Ready to open it?</p>
+      <button class="btn" id="surpriseBtn" aria-expanded="false">Reveal surprise ✨</button>
+      <div class="surprise" id="surpriseText"><div class="big">🎂💖🎉</div><strong>Khushi, you deserve all the happiness in the world!</strong><br>May your dreams come true one by one, may your heart stay light, and may your life be full of wonderful memories. Happy Birthday, superstar! ♡</div>
+    </article>
+  </div>
+</section>
+
+<section class="section" id="message">
+  <div class="section-heading"><div class="eyebrow">From my heart to yours</div><h2>My Sister, My Happiness</h2></div>
+  <div class="message">
+    <div class="heart-divider">♡ ─── ♡ ─── ♡</div>
+    <p>Khushi, having you as my sister is a gift I will always be thankful for. I hope you always believe in yourself, find kindness wherever you go, and have the courage to chase everything that makes you happy. You deserve love not just on your birthday, but on every ordinary day too.</p>
+    <p>Keep smiling, keep shining, and remember that your brother is always cheering for you.</p>
+    <div class="signature">Happy Birthday, Khushi ♡</div>
+  </div>
+</section>
+</main>
+
+<footer>Made with 🤎, maroon magic, and lots of love<br><span style="color:#e2b77e">Sister ✦ Best Friend ✦ Forever</span></footer>
+
+<script>
+(function(){
+  const $ = id => document.getElementById(id);
+  function updateCountdown(){
+    const now = new Date();
+    let target = new Date(now.getFullYear(), 0, 25, 0, 0, 0);
+    if(now >= target) target = new Date(now.getFullYear()+1, 0, 25, 0, 0, 0);
+    const diff = Math.max(0, target-now);
+    $('days').textContent = String(Math.floor(diff/86400000)).padStart(3,'0');
+    $('hours').textContent = String(Math.floor(diff/3600000)%24).padStart(2,'0');
+    $('minutes').textContent = String(Math.floor(diff/60000)%60).padStart(2,'0');
+    $('seconds').textContent = String(Math.floor(diff/1000)%60).padStart(2,'0');
+  }
+  updateCountdown(); setInterval(updateCountdown,1000);
+
+  $('letterBtn').addEventListener('click',()=>{
+    const el=$('letterText'),open=el.classList.toggle('open');
+    $('letterBtn').textContent=open?'Close your letter ♡':'Open your letter ♡';
+    $('letterBtn').setAttribute('aria-expanded',String(open));
+  });
+  $('surpriseBtn').addEventListener('click',()=>{
+    const el=$('surpriseText'),open=el.classList.toggle('open');
+    $('surpriseBtn').textContent=open?'Hide surprise ♡':'Reveal surprise ✨';
+    $('surpriseBtn').setAttribute('aria-expanded',String(open));
+    if(open) petals(22);
+  });
+
+  function petals(count){
+    for(let i=0;i<count;i++){
+      const p=document.createElement('span');p.className='petal';p.textContent=['✿','❀','♥','✧'][Math.floor(Math.random()*4)];
+      p.style.left=Math.random()*100+'vw';p.style.fontSize=(12+Math.random()*18)+'px';
+      p.style.setProperty('--drift',(Math.random()*180-90)+'px');
+      p.style.animationDuration=(5+Math.random()*6)+'s';p.style.animationDelay=(Math.random()*1.5)+'s';
+      document.body.appendChild(p);setTimeout(()=>p.remove(),12500);
+    }
+  }
+  setInterval(()=>{if(!document.hidden)petals(2)},1800);
+
+  // A gentle, synthesized piano-like melody; browsers start audio only after a tap.
+  let audioCtx=null,playing=false,timer=null,step=0;
+  const notes=[523.25,659.25,783.99,659.25,587.33,698.46,880,698.46,523.25,659.25,783.99,1046.5];
+  function note(freq){
+    if(!audioCtx)return;
+    const now=audioCtx.currentTime,osc=audioCtx.createOscillator(),gain=audioCtx.createGain();
+    const tone=audioCtx.createOscillator(),toneGain=audioCtx.createGain();
+    osc.type='sine';osc.frequency.setValueAtTime(freq,now);
+    tone.type='triangle';tone.frequency.setValueAtTime(freq*2,now);
+    gain.gain.setValueAtTime(0.0001,now);gain.gain.exponentialRampToValueAtTime(0.075,now+0.025);gain.gain.exponentialRampToValueAtTime(0.0001,now+1.25);
+    toneGain.gain.setValueAtTime(0.0001,now);toneGain.gain.exponentialRampToValueAtTime(0.012,now+0.02);toneGain.gain.exponentialRampToValueAtTime(0.0001,now+0.45);
+    osc.connect(gain);gain.connect(audioCtx.destination);tone.connect(toneGain);toneGain.connect(audioCtx.destination);
+    osc.start(now);tone.start(now);osc.stop(now+1.3);tone.stop(now+0.5);
+  }
+  function playStep(){if(!playing)return;note(notes[step%notes.length]);if(step%3===0)note(notes[(step+4)%notes.length]/2);step++;timer=setTimeout(playStep,650)}
+  $('musicBtn').addEventListener('click',async()=>{
+    if(!audioCtx){const AC=window.AudioContext||window.webkitAudioContext;if(!AC){$('musicBtn').textContent='Audio unavailable';return}audioCtx=new AC()}
+    if(audioCtx.state==='suspended')await audioCtx.resume();
+    playing=!playing;
+    if(playing){$('musicBtn').textContent='♫ Pause piano';$('musicBtn').setAttribute('aria-pressed','true');playStep()}
+    else{clearTimeout(timer);$('musicBtn').textContent='♫ Play piano';$('musicBtn').setAttribute('aria-pressed','false')}
+  });
+})();
+</script>
+</body>
+</html>
